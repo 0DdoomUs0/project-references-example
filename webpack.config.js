@@ -6,7 +6,7 @@ const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin');
 
 module.exports = {
   "mode": "development",
-  "entry": "src/index.tsx",
+  "entry": ["src/index.tsx", "src/server.ts"],
   "output": {
       "path": __dirname+'/dist',
       "filename": "[name].js"
